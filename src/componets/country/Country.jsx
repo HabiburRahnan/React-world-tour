@@ -1,11 +1,15 @@
-import "./Country.css";
+import "./country.css";
 const Country = ({ country }) => {
   console.log(country);
-  const { name, flags } = country;
+  const { name, flags, capital, area, population } = country;
+
   return (
     <div className="country">
-      <h3>Name: {name.common}</h3>
+      <h1>Name: {name.common}</h1>
       <img src={flags.png} alt="" />
+      <h3>Capital: {capital}</h3>
+      <p>Area: {area}</p>
+      <p>Population: {population}</p>
     </div>
   );
 };
